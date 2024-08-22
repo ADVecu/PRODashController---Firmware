@@ -57,7 +57,7 @@ pins:
     ts_name: 11 - Analog Input 6
 
   - pin: 12
-    meta: MM100_IN_02S2_ANALOG
+    meta: MM100_IN_O2S2_ANALOG
     class: analog_inputs
     ts_name: 12 - Analog Input 7
 
