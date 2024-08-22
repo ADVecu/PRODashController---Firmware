@@ -113,7 +113,7 @@ pins:
 
   - pin: 29
     meta: MM100_IN_O2S_ANALOG
-    class: switch_inputs
+    class: analog_inputs
     ts_name: 29 - SW Signal
   
   - pin: 30
