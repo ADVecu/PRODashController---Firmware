@@ -101,11 +101,6 @@ pins:
     class: event_inputs
     ts_name: 20 - VSS / HALL Input
 
-  - pin: 26
-    meta: MM100_IN_KNOCK
-    class: switch_inputs
-    ts_name: 26 - Digital Input 5
-
   - pin: 27
     meta: MM100_IN_CRANK
     class: switch_inputs
