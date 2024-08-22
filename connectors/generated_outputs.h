@@ -4,6 +4,24 @@
 #pragma once
 
 Gpio GENERATED_OUTPUTS = {
-	Gpio::B14, // B14 Output
-// "B14 Output",
+	Gpio::MM100_INJ8, // 1 - OUT 8
+	Gpio::MM100_INJ7, // 2 - OUT 7
+	Gpio::MM100_INJ6, // 3 - OUT 6
+	Gpio::MM100_INJ5, // 4 - OUT 5
+	Gpio::MM100_INJ4, // 5 - OUT 4
+	Gpio::MM100_INJ3, // 6 - OUT 3
+	Gpio::MM100_INJ2, // 7 - OUT 2
+	Gpio::MM100_INJ1, // 8 - OUT 1
+	Gpio::MM100_OUT_PWM1, // 9 - OUT 9
+	Gpio::MM100_OUT_PWM2, // 17 - OUT 10
+// "1 - OUT 8",
+// "2 - OUT 7",
+// "3 - OUT 6",
+// "4 - OUT 5",
+// "5 - OUT 4",
+// "6 - OUT 3",
+// "7 - OUT 2",
+// "8 - OUT 1",
+// "9 - OUT 9",
+// "17 - OUT 10",
 }
