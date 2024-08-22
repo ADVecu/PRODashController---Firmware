@@ -107,7 +107,7 @@ pins:
     ts_name: 27 - Digital Input 6
   
   - pin: 28
-    meta: MM100_IN_KNOCK
+    meta: MM100_IN_CAM
     class: switch_inputs
     ts_name: 28 - Digital Input 7
 
