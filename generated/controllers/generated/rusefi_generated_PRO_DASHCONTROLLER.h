@@ -54,8 +54,8 @@
 #define adc_channel_e_EFI_ADC_ERROR 50
 #define adc_channel_e_EFI_ADC_NONE 0
 #define adc_channel_e_EFI_ADC_TOTAL_CHANNELS 49
-#define adc_channel_e_enum 0="NONE",11="10 - Analog Input 5",12="11 - Analog Input 6",2="12 - Analog Input 7",9="13 - Analog Input 1",15="14 - Analog Input 2",8="15 - Analog Input 3",16="16 - Analog Input 4",13="18 - Temp Sensor 2",14="19 - Temp Sensor 1",1="29 - SW Signal"
-#define adc_channel_e_fullenum "NONE","29 - SW Signal","12 - Analog Input 7","INVALID","INVALID","INVALID","INVALID","INVALID","15 - Analog Input 3","13 - Analog Input 1","INVALID","10 - Analog Input 5","11 - Analog Input 6","18 - Temp Sensor 2","19 - Temp Sensor 1","14 - Analog Input 2","16 - Analog Input 4"
+#define adc_channel_e_enum 0="NONE",11="10 - Analog Input 5",12="11 - Analog Input 6",2="12 - Analog Input 7",9="13 - Analog Input 1",15="14 - Analog Input 2",8="15 - Analog Input 3",16="16 - Analog Input 4",13="18 - Temp Sensor 2",14="19 - Temp Sensor 1",10="27 - Digital Input 6",7="28 - Digital Input 7",1="29 - SW Signal"
+#define adc_channel_e_fullenum "NONE","29 - SW Signal","12 - Analog Input 7","INVALID","INVALID","INVALID","INVALID","28 - Digital Input 7","15 - Analog Input 3","13 - Analog Input 1","27 - Digital Input 6","10 - Analog Input 5","11 - Analog Input 6","18 - Temp Sensor 2","19 - Temp Sensor 1","14 - Analog Input 2","16 - Analog Input 4"
 #define ADC_CHANNEL_NONE 0
 #define afr_sensor_s_size 20
 #define air_pressure_sensor_config_s_size 12
@@ -1296,7 +1296,7 @@
 #define show_small_can_board_presets true
 #define show_test_presets false
 #define show_vvt_output_pin true
-#define SIGNATURE_HASH 4260771712
+#define SIGNATURE_HASH 3896340276
 #define SIMULATOR_TUNE_BIN_FILE_NAME "generated/simulator_tune_image.bin"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_PREFIX "generated/simulator_tune_image"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_SUFFIX ".bin"
@@ -1742,7 +1742,7 @@
 #define ts_show_wastegate_sensor true
 #define ts_show_wbo_canbus_index true
 #define ts_show_wbo_canbus_set_index true
-#define TS_SIGNATURE "rusEFI main.2024.08.25.PRO_DASHCONTROLLER.4260771712"
+#define TS_SIGNATURE "rusEFI main.2024.08.25.PRO_DASHCONTROLLER.3896340276"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_SINGLE_WRITE_COMMAND 'W'
