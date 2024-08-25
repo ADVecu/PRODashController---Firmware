@@ -102,12 +102,12 @@ pins:
     ts_name: 20 - VSS / HALL Input
 
   - pin: 27
-    id: [MM100_IN_CRANK, MM100_IN_CRANK]
+    id: [MM100_IN_CRANK, MM100_IN_CRANK_ANALOG]
     class: [switch_inputs, analog_inputs]
     ts_name: 27 - Digital Input 6
   
   - pin: 28
-    id: [MM100_IN_CAM, MM100_IN_CAM]
+    id: [MM100_IN_CAM, MM100_IN_CAM_ANALOG]
     class: [switch_inputs, analog_inputs]
     ts_name: 28 - Digital Input 7
 
