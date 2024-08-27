@@ -36,7 +36,7 @@ DDEFS += -DDIAG_5VP_PIN=Gpio::MM100_SPI3_MOSI
 
 
 #Mass Storage
-#DDEFS += -DEFI_EMBED_INI_MSD=FALSE
+DDEFS += -DEFI_EMBED_INI_MSD=FALSE
 
 include $(BOARDS_DIR)/hellen/hellen-common100.mk
 
