@@ -142,8 +142,8 @@
 #define boostType_e_auto_enum 0="OPEN_LOOP",1="CLOSED_LOOP"
 #define boostType_e_CLOSED_LOOP 1
 #define boostType_e_OPEN_LOOP 0
-#define brain_input_pin_e_enum 0="NONE",77="20 - VSS / HALL Input"
-#define brain_input_pin_e_fullenum "NONE","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","20 - VSS / HALL Input"
+#define brain_input_pin_e_enum 0="NONE",77="20 - VSS / HALL Input",67="Internal not for use - UART8 TX"
+#define brain_input_pin_e_fullenum "NONE","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","Internal not for use - UART8 TX","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","20 - VSS / HALL Input"
 #define brain_pin_diag_e_PIN_DRIVER_OFF 0x20
 #define brain_pin_diag_e_PIN_DRIVER_OVERTEMP 0x10
 #define brain_pin_diag_e_PIN_OK 0
@@ -1142,7 +1142,7 @@
 #define LUA_DIGITAL_INPUT_COUNT 8
 #define LUA_GAUGE_COUNT 8
 #define LUA_PWM_COUNT 8
-#define LUA_SCRIPT_SIZE 30000
+#define LUA_SCRIPT_SIZE 8000
 #define MAF_DECODING_COUNT 32
 #define maf_sensor_type_e_auto_enum 0="CUSTOM",2="Bosch0280218004",1="Bosch0280218037",3="DensoTODO"
 #define maf_sensor_type_e_Bosch0280218004 2
@@ -1189,8 +1189,8 @@
 #define operation_mode_e_FOUR_STROKE_TWELVE_TIMES_CRANK_SENSOR 6
 #define operation_mode_e_OM_NONE 0
 #define operation_mode_e_TWO_STROKE 3
-#define output_pin_e_enum 0="NONE",62="1 - OUT 8",40="17 - OUT 10",65="2 - OUT 7",10="3 - OUT 6",52="4 - OUT 5",60="5 - OUT 4",61="6 - OUT 3",11="7 - OUT 2",53="8 - OUT 1",63="9 - OUT 9"
-#define output_pin_e_fullenum "NONE","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","3 - OUT 6","7 - OUT 2","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","17 - OUT 10","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","4 - OUT 5","8 - OUT 1","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","5 - OUT 4","6 - OUT 3","1 - OUT 8","9 - OUT 9","INVALID","2 - OUT 7"
+#define output_pin_e_enum 0="NONE",62="1 - OUT 8",40="17 - OUT 10",65="2 - OUT 7",10="3 - OUT 6",52="4 - OUT 5",60="5 - OUT 4",61="6 - OUT 3",11="7 - OUT 2",53="8 - OUT 1",63="9 - OUT 9",47="Internal not for use - Ignition 1",71="Internal not for use - Ignition 2",70="Internal not for use - Ignition 3"
+#define output_pin_e_fullenum "NONE","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","3 - OUT 6","7 - OUT 2","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","17 - OUT 10","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","Internal not for use - Ignition 1","INVALID","INVALID","INVALID","INVALID","4 - OUT 5","8 - OUT 1","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","5 - OUT 4","6 - OUT 3","1 - OUT 8","9 - OUT 9","INVALID","2 - OUT 7","INVALID","INVALID","INVALID","INVALID","Internal not for use - Ignition 3","Internal not for use - Ignition 2"
 #define PACK_ADD_TEMPERATURE 40
 #define PACK_MULT_AFR 1000
 #define PACK_MULT_AFR_CFG 10
@@ -1212,7 +1212,7 @@
 #define PACK_PERCENT_BYTE_MULT 100.0
 #define PEDAL_TO_TPS_SIZE 8
 #define PERCENT_TRIM_BYTE_PACKING_DIV 0.02
-#define persistent_config_s_size 44968
+#define persistent_config_s_size 22968
 #define pid_s_size 20
 #define pin_input_mode_e_auto_enum 0="PI_DEFAULT",2="PI_PULLDOWN",1="PI_PULLUP"
 #define pin_input_mode_e_enum "DEFAULT", "PULLUP", "PULLDOWN"
@@ -1293,10 +1293,9 @@
 #define show_Frankenso_presets false
 #define show_microRusEFI_presets false
 #define show_Proteus_presets false
-#define show_small_can_board_presets true
 #define show_test_presets false
 #define show_vvt_output_pin true
-#define SIGNATURE_HASH 336846674
+#define SIGNATURE_HASH 4001339374
 #define SIMULATOR_TUNE_BIN_FILE_NAME "generated/simulator_tune_image.bin"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_PREFIX "generated/simulator_tune_image"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_SUFFIX ".bin"
@@ -1353,7 +1352,7 @@
 #define TOOTH_PACKET_SIZE 2
 #define TOP_DEAD_CENTER_MESSAGE "r"
 #define TORQUE_CURVE_SIZE 6
-#define TOTAL_CONFIG_SIZE 44968
+#define TOTAL_CONFIG_SIZE 22968
 #define TPS_2_BYTE_PACKING_MULT 100
 #define TPS_PPS_TOO_HIGH_THRESHOLD 110
 #define TPS_PPS_TOO_LOW_THRESHOLD -10
@@ -1603,14 +1602,14 @@
 #define ts_show_aux_connections true
 #define ts_show_aux_sensors true
 #define ts_show_auxserial_pins true
-#define ts_show_bank2_cam1 false
+#define ts_show_bank2_cam1 true
 #define ts_show_bank2_cam2 true
-#define ts_show_cam2 false
+#define ts_show_cam2 true
 #define ts_show_can2 false
 #define ts_show_can_bitrate true
 #define ts_show_can_pins false
-#define ts_show_check_engine false
-#define ts_show_clt_iat_pullup true
+#define ts_show_check_engine true
+#define ts_show_clt_iat_pullup false
 #define ts_show_clutch_down true
 #define ts_show_clutch_down_pin true
 #define ts_show_clutch_up true
@@ -1618,38 +1617,36 @@
 #define ts_show_communityCommsLedPid false
 #define ts_show_compression_ratio false
 #define ts_show_compressor_sensor true
-#define ts_show_cylinder_1 false
-#define ts_show_cylinder_10 false
-#define ts_show_cylinder_11 false
-#define ts_show_cylinder_12 false
-#define ts_show_cylinder_2 false
-#define ts_show_cylinder_3 false
-#define ts_show_cylinder_4 false
-#define ts_show_cylinder_5 false
-#define ts_show_cylinder_6 false
-#define ts_show_cylinder_7 false
-#define ts_show_cylinder_8 false
-#define ts_show_cylinder_9 false
-#define ts_show_cylinder_bank false
+#define ts_show_cylinder_10 true
+#define ts_show_cylinder_11 true
+#define ts_show_cylinder_12 true
+#define ts_show_cylinder_2 true
+#define ts_show_cylinder_3 true
+#define ts_show_cylinder_4 true
+#define ts_show_cylinder_5 true
+#define ts_show_cylinder_6 true
+#define ts_show_cylinder_7 true
+#define ts_show_cylinder_8 true
+#define ts_show_cylinder_9 true
+#define ts_show_cylinder_bank true
 #define ts_show_debug_mode false
 #define ts_show_ego2 true
 #define ts_show_egt false
-#define ts_show_engine_control false
 #define ts_show_etb false
-#define ts_show_etb_bias_curve false
+#define ts_show_etb_bias_curve true
 #define ts_show_etb_extra_monitoring false
-#define ts_show_etb_pins false
-#define ts_show_exhaust_vvt false
+#define ts_show_etb_pins true
+#define ts_show_exhaust_vvt true
 #define ts_show_experimental true
 #define ts_show_fan2_settings true
-#define ts_show_firing_order false
+#define ts_show_firing_order true
 #define ts_show_forced_induction true
 #define ts_show_ford_toyota_tps_pps true
 #define ts_show_fuel_level_sensor true
 #define ts_show_fuel_pressure_sensor true
 #define ts_show_fuel_pump true
 #define ts_show_fuel_relay_pin true
-#define ts_show_fuel_strategy false
+#define ts_show_fuel_strategy true
 #define ts_show_fuel_temp_sensor true
 #define ts_show_fuel_trim_cylinder_1 true
 #define ts_show_fuel_trim_cylinder_10 true
@@ -1663,36 +1660,36 @@
 #define ts_show_fuel_trim_cylinder_7 true
 #define ts_show_fuel_trim_cylinder_8 true
 #define ts_show_fuel_trim_cylinder_9 true
-#define ts_show_fuel_trims false
+#define ts_show_fuel_trims true
 #define ts_show_full_pinout true
 #define ts_show_gdi false
-#define ts_show_globalTriggerAngleOffset false
+#define ts_show_globalTriggerAngleOffset true
 #define ts_show_hardware_simulator false
-#define ts_show_hbridge_function false
-#define ts_show_hd false
+#define ts_show_hbridge_function true
+#define ts_show_hd true
 #define ts_show_hip9011 false
-#define ts_show_idle_hardware false
+#define ts_show_idle_hardware true
 #define ts_show_ign_key_analog_input false
 #define ts_show_ign_key_switch false
-#define ts_show_ignitionPinMode false
+#define ts_show_ignitionPinMode true
 #define ts_show_inj_diag false
-#define ts_show_injection_mode false
-#define ts_show_injection_phase false
+#define ts_show_injection_mode true
+#define ts_show_injection_phase true
 #define ts_show_injectionPinMode false
 #define ts_show_k_line false
 #define ts_show_l9779 false
-#define ts_show_maf false
+#define ts_show_maf true
 #define ts_show_main_relay false
 #define ts_show_main_relay_microRusEFI_message false
 #define ts_show_mc33810 false
-#define ts_show_multispark false
-#define ts_show_number_of_cylinders false
-#define ts_show_odd_fire false
+#define ts_show_multispark true
+#define ts_show_number_of_cylinders true
+#define ts_show_odd_fire true
 #define ts_show_oil_pressure_sensor true
 #define ts_show_oil_temp_sensor true
 #define ts_show_onboard_accelerometer false
 #define ts_show_output_diag false
-#define ts_show_popular_vehicles false
+#define ts_show_popular_vehicles true
 #define ts_show_reboot_to_dfu true
 #define ts_show_reset_calibrations false
 #define ts_show_rotary false
@@ -1701,7 +1698,7 @@
 #define ts_show_second_bank true
 #define ts_show_software_knock false
 #define ts_show_speedo_settings true
-#define ts_show_spi true
+#define ts_show_spi false
 #define ts_show_spi1_enable true
 #define ts_show_spi1_pins true
 #define ts_show_spi2_enable true
@@ -1713,12 +1710,12 @@
 #define ts_show_spi5_pins false
 #define ts_show_spi6_enable true
 #define ts_show_spi6_pins false
-#define ts_show_staged_injection false
+#define ts_show_staged_injection true
 #define ts_show_start_button true
 #define ts_show_starter_disable true
 #define ts_show_startup_map_baro_grab true
-#define ts_show_status_leds false
-#define ts_show_sync_cam false
+#define ts_show_status_leds true
+#define ts_show_sync_cam true
 #define ts_show_tachometer true
 #define ts_show_tcu false
 #define ts_show_tle8888 false
@@ -1726,9 +1723,9 @@
 #define ts_show_tps2 false
 #define ts_show_tps2_error true
 #define ts_show_tps_sent false
-#define ts_show_trigger_advanced false
+#define ts_show_trigger_advanced true
 #define ts_show_trigger_comparator false
-#define ts_show_trigger_overrides false
+#define ts_show_trigger_overrides true
 #define ts_show_tunerstudio_port true
 #define ts_show_uegoSerial true
 #define ts_show_vbatt false
@@ -1737,12 +1734,12 @@
 #define ts_show_vr_threshold_2 false
 #define ts_show_vr_threshold_all false
 #define ts_show_vr_threshold_pins false
-#define ts_show_vvt_output false
+#define ts_show_vvt_output true
 #define ts_show_vvt_output_pin true
 #define ts_show_wastegate_sensor true
 #define ts_show_wbo_canbus_index true
 #define ts_show_wbo_canbus_set_index true
-#define TS_SIGNATURE "rusEFI main.2024.08.28.PRO_DASHCONTROLLER.336846674"
+#define TS_SIGNATURE "rusEFI main.2024.08.29.PRO_DASHCONTROLLER.4001339374"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_SINGLE_WRITE_COMMAND 'W'
