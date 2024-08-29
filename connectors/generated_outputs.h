@@ -14,6 +14,9 @@ Gpio GENERATED_OUTPUTS = {
 	Gpio::MM100_INJ1, // 8 - OUT 1
 	Gpio::MM100_OUT_PWM1, // 9 - OUT 9
 	Gpio::MM100_OUT_PWM2, // 17 - OUT 10
+	Gpio::MM100_IGN1, // Internal not for use - Ignition 1
+	Gpio::MM100_IGN2, // Internal not for use - Ignition 2
+	Gpio::MM100_IGN3, // Internal not for use - Ignition 3
 // "1 - OUT 8",
 // "2 - OUT 7",
 // "3 - OUT 6",
@@ -24,4 +27,7 @@ Gpio GENERATED_OUTPUTS = {
 // "8 - OUT 1",
 // "9 - OUT 9",
 // "17 - OUT 10",
+// "Internal not for use - Ignition 1",
+// "Internal not for use - Ignition 2",
+// "Internal not for use - Ignition 3",
 }

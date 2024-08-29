@@ -10,6 +10,7 @@ const char * getBoardSpecificPinName(brain_pin_e brainPin) {
 		case Gpio::A8: return "3 - OUT 6";
 		case Gpio::A9: return "7 - OUT 2";
 		case Gpio::B1: return "27 - Digital Input 6";
+		case Gpio::C13: return "Internal not for use - Ignition 1";
 		case Gpio::C6: return "17 - OUT 10";
 		case Gpio::D10: return "5 - OUT 4";
 		case Gpio::D11: return "6 - OUT 3";
@@ -18,11 +19,14 @@ const char * getBoardSpecificPinName(brain_pin_e brainPin) {
 		case Gpio::D15: return "2 - OUT 7";
 		case Gpio::D2: return "4 - OUT 5";
 		case Gpio::D3: return "8 - OUT 1";
+		case Gpio::E1: return "Internal not for use - UART8 TX";
 		case Gpio::E11: return "20 - VSS / HALL Input";
 		case Gpio::E12: return "30 - Digital Input 1";
 		case Gpio::E13: return "31 - Digital Input 2";
 		case Gpio::E14: return "32 - Digital Input 3";
 		case Gpio::E15: return "33 - Digital Input 4";
+		case Gpio::E4: return "Internal not for use - Ignition 3";
+		case Gpio::E5: return "Internal not for use - Ignition 2";
 		default: return nullptr;
 	}
 	return nullptr;
