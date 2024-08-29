@@ -135,3 +135,23 @@ pins:
     meta: MM100_IN_D4
     class: switch_inputs
     ts_name: 33 - Digital Input 4
+
+  - pin: F2
+    meta: MM100_UART8_TX
+    class: event_inputs
+    ts_name: Internal not for use - UART8 TX
+
+  - pin: A1
+    meta: MM100_IGN1
+    class: outputs
+    ts_name: Internal not for use - Ignition 1
+
+  - pin: A2
+    meta: MM100_IGN2
+    class: outputs
+    ts_name: Internal not for use - Ignition 2
+
+  - pin: A3
+    meta: MM100_IGN3
+    class: outputs
+    ts_name: Internal not for use - Ignition 3
