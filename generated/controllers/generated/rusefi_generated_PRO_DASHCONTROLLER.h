@@ -1755,7 +1755,7 @@
 #define ts_show_wastegate_sensor true
 #define ts_show_wbo_canbus_index true
 #define ts_show_wbo_canbus_set_index true
-#define TS_SIGNATURE "rusEFI main.2024.10.03.PRO_DASHCONTROLLER.3927116942"
+#define TS_SIGNATURE "rusEFI main.2024.10.04.PRO_DASHCONTROLLER.3927116942"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_SINGLE_WRITE_COMMAND 'W'
